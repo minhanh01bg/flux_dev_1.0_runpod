@@ -99,7 +99,7 @@ def generate_image(job):
     images = MODELS.pipe(
         prompt=job_input.get('prompt'),
         negative_prompt=job_input.get('negative_prompt',""),
-        num_inference_steps=job_input.get('num_inference_steps', 50),
+        num_inference_steps=job_input.get('num_inference_steps', 20),
         height=job_input.get('height', 1024),
         width=job_input.get('width', 1024),
         guidance_scale=job_input.get('guidance_scale', 3.5),
